@@ -1,3 +1,3 @@
 'use strict';
 
-module.exports = require('./lib/easy-i18n-cli');
+module.exports = require('./lib/easy-i18n');

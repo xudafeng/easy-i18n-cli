@@ -6,7 +6,8 @@
     "i18n"
   ],
   "bin": {
-    "easy-i18n-cli": "./bin/easy-i18n-cli.js"
+    "easy-i18n-cli": "./bin/easy-i18n-cli.js",
+    "trnaslate": "./bin/easy-i18n-cli.js"
   },
   "files": [
     "bin/**/*.js",
@@ -17,13 +18,17 @@
     "type": "git",
     "url": "git://github.com/xudafeng/easy-i18n-cli.git"
   },
-  "dependencies": {
-  },
+  "dependencies": {},
   "devDependencies": {
+    "chalk": "^4.1.2",
+    "commander": "^9.4.1",
     "eslint": "*",
+    "eslint-config-egg": "^12.1.0",
     "eslint-plugin-mocha": "^4.11.0",
     "git-contributor": "1",
+    "globby": "^4.1.0",
     "husky": "*",
+    "mkdirp": "^1.0.4",
     "mocha": "*",
     "nyc": "*"
   },

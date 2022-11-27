@@ -31,4 +31,9 @@ if (options.config) {
   };
 }
 
-require('../lib/easy-i18n')(config);
+const EasyI18n = require('../lib/easy-i18n');
+
+new EasyI18n(config)
+  .run()
+  .then()
+  .catch(console.error);

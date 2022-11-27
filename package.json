@@ -18,17 +18,18 @@
     "type": "git",
     "url": "git://github.com/xudafeng/easy-i18n-cli.git"
   },
-  "dependencies": {},
-  "devDependencies": {
+  "dependencies": {
     "chalk": "^4.1.2",
     "commander": "^9.4.1",
+    "globby": "^4.1.0",
+    "mkdirp": "^1.0.4"
+  },
+  "devDependencies": {
     "eslint": "*",
     "eslint-config-egg": "^12.1.0",
     "eslint-plugin-mocha": "^4.11.0",
     "git-contributor": "1",
-    "globby": "^4.1.0",
     "husky": "*",
-    "mkdirp": "^1.0.4",
     "mocha": "*",
     "nyc": "*"
   },

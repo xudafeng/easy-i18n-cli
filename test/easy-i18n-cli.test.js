@@ -2,9 +2,10 @@
 
 const assert = require('assert');
 
-const easy-i18n-cli = require('..');
+const easy = require('..');
 
 describe('test', () => {
   it('should be ok', () => {
+    assert(easy);
   });
 });

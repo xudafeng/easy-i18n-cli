@@ -1,4 +1,10 @@
 function render() {
   const foo = 'bar';
-  return (__i18n('{foo}， xxx！', { foo }));
+  let test = (__i18n('{foo}， xxx！', { foo }));
+  test = __i18n(
+    '-{foo}-， xxx！-'
+  , {
+    foo
+  });
+  return test;
 }

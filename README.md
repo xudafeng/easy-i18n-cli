@@ -1,17 +1,17 @@
 # easy-i18n-cli
 
 [![NPM version][npm-image]][npm-url]
-[![build status][travis-image]][travis-url]
-[![Test coverage][coveralls-image]][coveralls-url]
+[![CI][ci-image]][ci-url]
+[![Test coverage][codecov-image]][codecov-url]
 [![node version][node-image]][node-url]
 [![npm download][download-image]][download-url]
 
 [npm-image]: https://img.shields.io/npm/v/easy-i18n-cli.svg
 [npm-url]: https://npmjs.org/package/easy-i18n-cli
-[travis-image]: https://img.shields.io/travis/xudafeng/easy-i18n-cli.svg
-[travis-url]: https://travis-ci.org/xudafeng/easy-i18n-cli
-[coveralls-image]: https://img.shields.io/coveralls/xudafeng/easy-i18n-cli.svg
-[coveralls-url]: https://coveralls.io/r/xudafeng/easy-i18n-cli?branch=master
+[ci-image]: https://github.com/xudafeng/easy-i18n-cli/actions/workflows/ci.yml/badge.svg
+[ci-url]: https://github.com/xudafeng/easy-i18n-cli/actions/workflows/ci.yml`
+[codecov-image]: https://img.shields.io/codecov/c/github/xudafeng/easy-i18n-cli.svg?logo=codecov
+[codecov-url]: https://codecov.io/gh/xudafeng/easy-i18n-cli
 [node-image]: https://img.shields.io/badge/node.js-%3E=_8-green.svg
 [node-url]: http://nodejs.org/download/
 [download-image]: https://img.shields.io/npm/dm/easy-i18n-cli.svg

@@ -10,6 +10,7 @@ const { version } = require('../package');
 
 program
   .option('-v, --version')
+  .option('--check', 'check locale file')
   .option('-c, --config <string>', 'config file path');
 
 program.parse();
@@ -32,6 +33,13 @@ if (options.config) {
 }
 
 const EasyI18n = require('../lib/easy-i18n');
+
+if (options.check) {
+  return new EasyI18n(config)
+    .runWithCheck()
+    .then()
+    .catch(console.error);
+}
 
 new EasyI18n(config)
   .run()

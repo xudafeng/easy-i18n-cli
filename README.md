@@ -25,6 +25,25 @@
 $ npm i easy-i18n-cli --save-dev
 ```
 
+## Configuraion
+
+```javascript
+module.exports = {
+  srcDirs: [
+    'test/fixtures/**/*.*',
+  ],
+  distDir: __dirname,
+  tokenName: '__i18n',
+};
+```
+
+```
+...
+  "translate": "easy-i18n-cli -c ./i18n.config.js",
+  "translate:check": "npm run translate -- --check",
+...
+```
+
 ## License
 
 The MIT License (MIT)

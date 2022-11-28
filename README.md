@@ -28,6 +28,7 @@ $ npm i easy-i18n-cli --save-dev
 ## Configuraion
 
 ```javascript
+// i18n.config.js
 module.exports = {
   srcDirs: [
     'test/fixtures/**/*.*',

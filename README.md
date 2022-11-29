@@ -47,6 +47,12 @@ module.exports = {
 
 <!-- GITCONTRIBUTOR_START -->
 
+## Use APIS
+
+```bash
+$ ./bin/easy-i18n-cli.js -c ./google-translate.config.js
+```
+
 ## Contributors
 
 |[<img src="https://avatars.githubusercontent.com/u/1011681?v=4" width="100px;"/><br/><sub><b>xudafeng</b></sub>](https://github.com/xudafeng)<br/>|[<img src="https://avatars.githubusercontent.com/u/52845048?v=4" width="100px;"/><br/><sub><b>snapre</b></sub>](https://github.com/snapre)<br/>|

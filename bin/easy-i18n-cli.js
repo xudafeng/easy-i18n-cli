@@ -37,11 +37,9 @@ const EasyI18n = require('../lib/easy-i18n');
 if (options.check) {
   return new EasyI18n(config)
     .runWithCheck()
-    .then()
     .catch(console.error);
 }
 
 new EasyI18n(config)
   .run()
-  .then()
   .catch(console.error);

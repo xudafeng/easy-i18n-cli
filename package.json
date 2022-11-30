@@ -1,6 +1,6 @@
 {
   "name": "easy-i18n-cli",
-  "version": "1.0.4",
+  "version": "1.0.6",
   "description": "easy-i18n-cli",
   "keywords": [
     "i18n"
@@ -13,7 +13,7 @@
     "bin/**/*.js",
     "lib/**/*.js"
   ],
-  "main": "./lib/index.js",
+  "main": "./lib/easy-i18n.js",
   "repository": {
     "type": "git",
     "url": "git://github.com/xudafeng/easy-i18n-cli.git"

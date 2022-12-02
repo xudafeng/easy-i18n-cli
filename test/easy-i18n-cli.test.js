@@ -2,10 +2,10 @@
 
 const assert = require('assert');
 
-const easy = require('../src');
+const EasyI18n = require('../src/easy-i18n');
 
 describe('test', () => {
   it('should be ok', () => {
-    assert(easy);
+    assert(EasyI18n);
   });
 });

@@ -32,7 +32,7 @@ if (options.config) {
   };
 }
 
-const EasyI18n = require('../lib/easy-i18n');
+const EasyI18n = require('../src/easy-i18n');
 
 if (options.check) {
   return new EasyI18n(config)

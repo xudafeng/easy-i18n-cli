@@ -2,7 +2,7 @@
 
 const assert = require('assert');
 
-const easy = require('..');
+const easy = require('../src');
 
 describe('test', () => {
   it('should be ok', () => {

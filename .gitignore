@@ -3,4 +3,3 @@ node_modules
 coverage
 *.sw*
 *.un~
-en-US.js

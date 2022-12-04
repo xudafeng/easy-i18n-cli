@@ -3,6 +3,9 @@
 module.exports = {
   root: true,
   extends: 'eslint-config-egg',
+  globals: {
+    __i18n: true,
+  },
   rules: {
     'valid-jsdoc': 0,
     'no-script-url': 0,
@@ -24,5 +27,6 @@ module.exports = {
     'one-var': 0,
     'no-trailing-spaces': [ 'warn', { skipBlankLines: true }],
     'no-return-await': 0,
+    quotes: [ 1, 'single' ],
   },
 };

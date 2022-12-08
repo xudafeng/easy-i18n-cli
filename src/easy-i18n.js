@@ -35,6 +35,9 @@ class EasyI18n {
       ...defaultOptions,
       ...options,
     };
+    const { distDir, distFileName } = this.options;
+    const distFile = path.resolve(distDir, distFileName);
+    this.options.distFile = distFile;
   }
 
   debugLog(...args) {
@@ -126,9 +129,7 @@ class EasyI18n {
   }
 
   async initData() {
-    const { distDir, distFileName } = this.options;
-    const distFile = path.resolve(distDir, distFileName);
-    this.options.distFile = distFile;
+    const { distFile } = this.options;
     try {
       this.existedData = require(distFile);
     } catch (e) {
@@ -159,10 +160,8 @@ class EasyI18n {
     return offset + 1;
   }
 
-  async runWithCheck(options = {}) {
-    await this.run(options);
+  async check() {
     const { distFile } = this.options;
-    delete require.cache[distFile];
     const checkTarget = require(distFile);
     const lines = [];
     const lineOffset = await this._getLineOffset();
@@ -180,6 +179,14 @@ class EasyI18n {
     }
 
     this.infoLog('i18n translate check passed!');
+  }
+
+  async runWithCheck(options = {}) {
+    await this.run(options);
+
+    const { distFile } = this.options;
+    delete require.cache[distFile];
+    await this.check();
   }
 }
 

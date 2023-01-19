@@ -44,14 +44,25 @@ module.exports = {
   "translate:check": "npm run translate -- --check",
 ...
 ```
+## Use web modules
 
-<!-- GITCONTRIBUTOR_START -->
+```javascript
+import locale from 'easy-i18n-cli/src/locale';
+import enObj from './en-US';
+
+export const __i18n = locale({
+  en: enObj,
+  useEn: () => true,
+});
+```
 
 ## Use APIS
 
 ```bash
 $ ./bin/easy-i18n-cli.js -c ./google-translate.config.js
 ```
+
+<!-- GITCONTRIBUTOR_START -->
 
 ## Contributors
 

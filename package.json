@@ -1,6 +1,6 @@
 {
   "name": "easy-i18n-cli",
-  "version": "1.1.5",
+  "version": "1.2.0",
   "description": "easy-i18n-cli",
   "keywords": [
     "i18n"
@@ -23,7 +23,8 @@
     "commander": "^9.4.1",
     "globby": "^4.1.0",
     "lodash": "4",
-    "mkdirp": "^1.0.4"
+    "mkdirp": "^1.0.4",
+    "ts-node": "^10.9.1"
   },
   "devDependencies": {
     "eslint": "*",

@@ -36,6 +36,10 @@ class EasyI18n {
       ...options,
     };
     const { distDir, distFileName } = this.options;
+    if (distFileName.endsWith('.ts')) {
+      // import ts file as cjs module
+      this.registTsNode();
+    }
     const distFile = path.resolve(distDir, distFileName);
     this.options.distFile = distFile;
   }
@@ -49,6 +53,14 @@ class EasyI18n {
 
   infoLog(content, ...args) {
     console.log(`\ntranslate ${chalk.cyan(content)}\n`, ...args);
+  }
+
+  registTsNode() {
+    require('ts-node').register({
+      compilerOptions: {
+        module: 'commonjs',
+      },
+    });
   }
 
   async output() {
@@ -131,7 +143,8 @@ class EasyI18n {
   async initData() {
     const { distFile } = this.options;
     try {
-      this.existedData = require(distFile);
+      const data = require(distFile);
+      this.existedData = data.default || data;
     } catch (e) {
       console.error(e);
     }

@@ -9,7 +9,7 @@ const defaultOptions = {
 
 /**
  * multiple scenes ending
- * e.g. __('text#sceneA') -> 'text'} 
+ * e.g. __('text#sceneA') -> 'text'}
  */
 function resolveMultiScenes(value) {
   return value.replace(/#\w*$/, '');

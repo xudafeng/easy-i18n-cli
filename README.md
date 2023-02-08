@@ -1,4 +1,4 @@
-# easy-i18n-cli
+# easy-i18n-cli2
 
 [![NPM version][npm-image]][npm-url]
 [![CI][ci-image]][ci-url]
@@ -6,23 +6,23 @@
 [![node version][node-image]][node-url]
 [![npm download][download-image]][download-url]
 
-[npm-image]: https://img.shields.io/npm/v/easy-i18n-cli.svg
-[npm-url]: https://npmjs.org/package/easy-i18n-cli
-[ci-image]: https://github.com/xudafeng/easy-i18n-cli/actions/workflows/ci.yml/badge.svg
-[ci-url]: https://github.com/xudafeng/easy-i18n-cli/actions/workflows/ci.yml
-[codecov-image]: https://img.shields.io/codecov/c/github/xudafeng/easy-i18n-cli.svg?logo=codecov
-[codecov-url]: https://codecov.io/gh/xudafeng/easy-i18n-cli
+[npm-image]: https://img.shields.io/npm/v/easy-i18n-cli2.svg
+[npm-url]: https://npmjs.org/package/easy-i18n-cli2
+[ci-image]: https://github.com/xudafeng/easy-i18n-cli2/actions/workflows/ci.yml/badge.svg
+[ci-url]: https://github.com/xudafeng/easy-i18n-cli2/actions/workflows/ci.yml
+[codecov-image]: https://img.shields.io/codecov/c/github/xudafeng/easy-i18n-cli2.svg?logo=codecov
+[codecov-url]: https://codecov.io/gh/xudafeng/easy-i18n-cli2
 [node-image]: https://img.shields.io/badge/node.js-%3E=_8-green.svg
 [node-url]: http://nodejs.org/download/
-[download-image]: https://img.shields.io/npm/dm/easy-i18n-cli.svg
-[download-url]: https://npmjs.org/package/easy-i18n-cli
+[download-image]: https://img.shields.io/npm/dm/easy-i18n-cli2.svg
+[download-url]: https://npmjs.org/package/easy-i18n-cli2
 
 > i18n cli
 
 ## Installment
 
 ```bash
-$ npm i easy-i18n-cli --save-dev
+$ npm i easy-i18n-cli2 --save-dev
 ```
 
 ## Configuraion
@@ -40,14 +40,14 @@ module.exports = {
 
 ```
 ...
-  "translate": "easy-i18n-cli -c ./i18n.config.js",
+  "translate": "easy-i18n-cli2 -c ./i18n.config.js",
   "translate:check": "npm run translate -- --check",
 ...
 ```
 ## Use web modules
 
 ```javascript
-import locale from 'easy-i18n-cli/src/locale';
+import locale from 'easy-i18n-cli2/src/locale';
 import enObj from './en-US';
 
 export const __i18n = locale({
@@ -59,7 +59,7 @@ export const __i18n = locale({
 ## Use APIS
 
 ```bash
-$ ./bin/easy-i18n-cli.js -c ./google-translate.config.js
+$ ./bin/easy-i18n-cli2.js -c ./google-translate.config.js
 ```
 
 <!-- GITCONTRIBUTOR_START -->

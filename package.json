@@ -1,13 +1,13 @@
 {
-  "name": "easy-i18n-cli2",
-  "version": "1.2.1",
-  "description": "easy-i18n-cli2",
+  "name": "easy-i18n-cli",
+  "version": "1.2.2",
+  "description": "easy-i18n-cli",
   "keywords": [
     "i18n"
   ],
   "bin": {
-    "easy-i18n-cli2": "./bin/easy-i18n-cli2.js",
-    "translate": "./bin/easy-i18n-cli2.js"
+    "easy-i18n-cli": "./bin/easy-i18n-cli.js",
+    "translate": "./bin/easy-i18n-cli.js"
   },
   "files": [
     "src/**/*.js",
@@ -16,7 +16,7 @@
   "main": "./src/easy-i18n.js",
   "repository": {
     "type": "git",
-    "url": "git://github.com/xudafeng/easy-i18n-cli2.git"
+    "url": "git://github.com/xudafeng/easy-i18n-cli.git"
   },
   "dependencies": {
     "chalk": "^4.1.2",

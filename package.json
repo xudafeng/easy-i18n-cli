@@ -1,6 +1,6 @@
 {
   "name": "easy-i18n-cli",
-  "version": "1.2.3",
+  "version": "1.2.4",
   "description": "easy-i18n-cli",
   "keywords": [
     "i18n"
@@ -19,9 +19,9 @@
     "url": "git://github.com/xudafeng/easy-i18n-cli.git"
   },
   "dependencies": {
-    "chalk": "^4.1.2",
-    "commander": "^9.4.1",
-    "globby": "^4.1.0",
+    "chalk": "4",
+    "commander": "9",
+    "globby": "4",
     "lodash": "4",
     "mkdirp": "^1.0.4",
     "ts-node": "^10.9.1",

@@ -11,9 +11,8 @@ const { version } = require('../package');
 program
   .option('-v, --version')
   .option('--check', 'check locale file')
-  .option('-c, --config <string>', 'config file path');
-
-program.parse();
+  .option('-c, --config <string>', 'config file path')
+  .parse();
 
 const options = program.opts();
 

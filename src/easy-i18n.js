@@ -5,6 +5,7 @@ const path = require('path');
 const chalk = require('chalk');
 const globby = require('globby');
 const { promises: fs } = require('fs');
+const originFs = require('fs');
 const { sync: mkdirp } = require('mkdirp');
 
 const defaultOptions = {
@@ -70,14 +71,13 @@ class EasyI18n {
     this.infoLog('output file: %s', options.distFile);
   }
 
-  async resolveDir() {
+  resolveDirSync() {
     const { options } = this;
     mkdirp(options.distDir);
-    const list = globby
+    return globby
       .sync(options.srcDirs, { cwd: options.cwd })
       .map(filePath => path.resolve(options.cwd, filePath))
-      .map(filePath => this.resolveFile(filePath));
-    await Promise.all(list);
+      .map(filePath => this.resolveFileSync(filePath));
   }
 
   sortKey(data) {
@@ -131,16 +131,17 @@ class EasyI18n {
     return res;
   }
 
-  async resolveFile(filePath) {
-    const content = await fs.readFile(filePath, 'utf-8');
+  resolveFileSync(filePath) {
+    const content = originFs.readFileSync(filePath, 'utf-8');
     const res = this.getI18nTokens(content);
+
     this.currentData = {
       ...this.currentData,
       ...res,
     };
   }
 
-  async initData() {
+  initData() {
     const { distFile } = this.options;
     try {
       const data = require(distFile);
@@ -148,6 +149,7 @@ class EasyI18n {
     } catch (e) {
       console.error(e);
     }
+    this.resolveDirSync();
   }
 
   async run(options = {}) {
@@ -156,8 +158,7 @@ class EasyI18n {
       ...options,
     };
     this.debugLog('options:\n%s\n', JSON.stringify(this.options, null, 2));
-    await this.initData();
-    await this.resolveDir();
+    this.initData();
     await this.output();
   }
 

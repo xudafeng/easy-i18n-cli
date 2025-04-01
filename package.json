@@ -1,6 +1,6 @@
 {
   "name": "easy-i18n-cli",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "easy-i18n-cli",
   "keywords": [
     "i18n"
@@ -16,7 +16,7 @@
   "main": "./src/easy-i18n.js",
   "repository": {
     "type": "git",
-    "url": "git://github.com/xudafeng/easy-i18n-cli.git"
+    "url": "git://github.com/node-modules/easy-i18n-cli.git"
   },
   "dependencies": {
     "chalk": "4",

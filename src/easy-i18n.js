@@ -107,7 +107,7 @@ class EasyI18n {
     this.debugLog('new keys:\n%s\n', JSON.stringify(newKeys, null, 2));
     for (let i = 0; i < newKeys.length; i++) {
       const key = newKeys[i];
-      outputData[key] = await options.translateFilter(key);
+      outputData[key] = await options.translateFilter(this.currentData[key]);
     }
     this.debugLog('output data:\n%s\n', JSON.stringify(outputData, null, 2));
     this.outputData = outputData;

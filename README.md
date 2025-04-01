@@ -7,8 +7,8 @@
 
 [npm-image]: https://img.shields.io/npm/v/easy-i18n-cli.svg
 [npm-url]: https://npmjs.org/package/easy-i18n-cli
-[ci-image]: https://github.com/xudafeng/easy-i18n-cli/actions/workflows/ci.yml/badge.svg
-[ci-url]: https://github.com/xudafeng/easy-i18n-cli/actions/workflows/ci.yml
+[ci-image]: https://github.com/node-modules/easy-i18n-cli/actions/workflows/ci.yml/badge.svg
+[ci-url]: https://github.com/node-modules/easy-i18n-cli/actions/workflows/ci.yml
 [node-image]: https://img.shields.io/badge/node.js-%3E=_8-green.svg
 [node-url]: http://nodejs.org/download/
 [download-image]: https://img.shields.io/npm/dm/easy-i18n-cli.svg

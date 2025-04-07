@@ -7,6 +7,7 @@ const globby = require('globby');
 const { promises: fs } = require('fs');
 const originFs = require('fs');
 const { sync: mkdirp } = require('mkdirp');
+const Utils = require('./utils');
 
 const defaultOptions = {
   distFileName: 'en-US.js',
@@ -155,8 +156,7 @@ class EasyI18n {
   initData() {
     const { distFile } = this.options;
     try {
-      delete require.cache[distFile];
-      const data = require(distFile);
+      const data = Utils.noCacheRequire(distFile);
       this.existedData = data.default || data;
     } catch (e) {
       console.error(e);
@@ -188,7 +188,7 @@ class EasyI18n {
 
   async check() {
     const { distFile } = this.options;
-    const checkTarget = require(distFile);
+    const checkTarget = Utils.noCacheRequire(distFile);
     const lines = [];
     const lineOffset = await this._getLineOffset();
     Object.keys(checkTarget).forEach((key, index) => {
@@ -209,9 +209,6 @@ class EasyI18n {
 
   async runWithCheck(options = {}) {
     await this.run(options);
-
-    const { distFile } = this.options;
-    delete require.cache[distFile];
     await this.check();
   }
 }

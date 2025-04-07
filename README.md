@@ -63,11 +63,11 @@ $ ./bin/easy-i18n-cli.js -c ./google-translate.config.js
 
 ## Contributors
 
-|[<img src="https://avatars.githubusercontent.com/u/1011681?v=4" width="100px;"/><br/><sub><b>xudafeng</b></sub>](https://github.com/xudafeng)<br/>|[<img src="https://avatars.githubusercontent.com/u/52845048?v=4" width="100px;"/><br/><sub><b>snapre</b></sub>](https://github.com/snapre)<br/>|[<img src="https://avatars.githubusercontent.com/u/12947068?v=4" width="100px;"/><br/><sub><b>ilimei</b></sub>](https://github.com/ilimei)<br/>|[<img src="https://avatars.githubusercontent.com/u/61226209?v=4" width="100px;"/><br/><sub><b>yangkeni</b></sub>](https://github.com/yangkeni)<br/>|
-| :---: | :---: | :---: | :---: |
+|[<img src="https://avatars.githubusercontent.com/u/1011681?v=4" width="100px;"/><br/><sub><b>xudafeng</b></sub>](https://github.com/xudafeng)<br/>|[<img src="https://avatars.githubusercontent.com/u/52845048?v=4" width="100px;"/><br/><sub><b>snapre</b></sub>](https://github.com/snapre)<br/>|[<img src="https://avatars.githubusercontent.com/u/61226209?v=4" width="100px;"/><br/><sub><b>yangkeni</b></sub>](https://github.com/yangkeni)<br/>|[<img src="https://avatars.githubusercontent.com/u/11213298?v=4" width="100px;"/><br/><sub><b>WynterDing</b></sub>](https://github.com/WynterDing)<br/>|[<img src="https://avatars.githubusercontent.com/u/12947068?v=4" width="100px;"/><br/><sub><b>ilimei</b></sub>](https://github.com/ilimei)<br/>|
+| :---: | :---: | :---: | :---: | :---: |
 
 
-This project follows the git-contributor [spec](https://github.com/xudafeng/git-contributor), auto updated at `Tue Apr 01 2025 15:44:10 GMT+0800`.
+This project follows the git-contributor [spec](https://github.com/xudafeng/git-contributor), auto updated at `Mon Apr 07 2025 21:05:31 GMT+0800`.
 
 <!-- GITCONTRIBUTOR_END -->
 

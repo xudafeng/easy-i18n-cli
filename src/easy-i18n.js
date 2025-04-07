@@ -155,6 +155,7 @@ class EasyI18n {
   initData() {
     const { distFile } = this.options;
     try {
+      delete require.cache[distFile];
       const data = require(distFile);
       this.existedData = data.default || data;
     } catch (e) {

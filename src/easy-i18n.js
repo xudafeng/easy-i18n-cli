@@ -88,6 +88,16 @@ class EasyI18n {
     return res;
   }
 
+  pickTranslatedData(data) {
+    const res = {};
+    Object.keys(data).forEach(key => {
+      if (!this.hasChinese(data[key])) {
+        res[key] = data[key];
+      }
+    });
+    return res;
+  }
+
   async postResolve() {
     const { options } = this;
     this.existedData = this.sortKey(this.existedData);
@@ -101,7 +111,8 @@ class EasyI18n {
     this.debugLog('current data:\n%s\n', JSON.stringify(this.currentData, null, 2));
     const outputData = this.sortKey({
       ...this.currentData,
-      ...(options.appendMode ? this.existedData : {}),
+      // append mode will keep existed translated data
+      ...(options.appendMode ? this.pickTranslatedData(this.existedData) : {}),
     });
     const newKeys = _.difference(Object.keys(this.currentData), Object.keys(this.existedData));
     this.debugLog('new keys:\n%s\n', JSON.stringify(newKeys, null, 2));

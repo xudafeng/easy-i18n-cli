@@ -157,7 +157,7 @@ class EasyI18n {
     const { distFile } = this.options;
     try {
       const data = Utils.noCacheRequire(distFile);
-      this.existedData = data.default || data;
+      this.existedData = Utils.extractLocaleFromExport(data);
     } catch (e) {
       console.error(e);
     }
@@ -188,7 +188,8 @@ class EasyI18n {
 
   async check() {
     const { distFile } = this.options;
-    const checkTarget = Utils.noCacheRequire(distFile);
+    let checkTarget = Utils.noCacheRequire(distFile);
+    checkTarget = Utils.extractLocaleFromExport(checkTarget);
     const lines = [];
     const lineOffset = await this._getLineOffset();
     Object.keys(checkTarget).forEach((key, index) => {
